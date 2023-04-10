@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="self">
+	
+	
+	<insert id="create" parameterType="selfVO">
+		insert into self values (#{id}, #{name}, #{age}, #{location} ,#{img})
+	</insert>
+	
+	<delete id="delete"  parameterType="String">
+		delete from self where id = #{id}
+	</delete>
+	
+	<update id="update"  parameterType="selfVO">
+		update self set name = #{name} where id = #{id}
+	</update>
+	
+	<select id="one" parameterType="String" resultType="selfVO">
+		select * from self where id = #{id}
+	</select>
+	
+	<select id="all"  resultType="selfVO">
+		select * from self 
+	</select>
+	
+</mapper>
