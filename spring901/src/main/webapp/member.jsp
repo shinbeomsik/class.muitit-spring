@@ -40,7 +40,7 @@
 <h3>회원탈퇴 화면입니다. </h3>
 <hr color="red">
 <form action="delete" method="get">
-	id : <input name="id" value="apple"><br>
+	id : <input name="id" value="samsung"><br>
 	<button type="submit">서버로 전송</button>
 </form>
 <hr color="red">
